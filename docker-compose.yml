@@ -1,0 +1,10 @@
+version: '3'
+services:
+  nextjs:
+    image: nextimage
+    working_dir: /nextjs-docker
+    command: npm run dev
+    volumes:
+      - ./nextjs-docker:/nextjs-docker
+    ports:
+      - "9903:3000"
